@@ -12,7 +12,7 @@ layout: default
         {% for image in page.images %}
           <div class="col-sm-6 col-md-4 col-lg-4 item">
             <div class="thumbnail">
-              <!-- <a href="{{ post.url | prepend: site.baseurl }}"> --><a href="{{ image | last }}" target="_blank"><img src="/img/portfolio/{{ image | first }}" alt="" class="img-responsive"></a>
+              <!-- <a href="{{ post.url | prepend: site.baseurl }}"> --><a href="{{ image | last }}" target="_blank"><img src="{{site.baseurl}}/img/portfolio/{{ image | first }}" alt="" class="img-responsive"></a>
             </div>
           </div>{% endfor %}
       </div>

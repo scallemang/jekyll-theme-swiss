@@ -13,7 +13,7 @@ layout: default
 	        {% for post in site.categories[page.category] %}
 	          <div class="col-sm-4">
 	              {% if post.image %}
-	              <img src="/img/{{ post.image }}" alt="" class="img-responsive">
+	              <img src="{{site.baseurl}}/img/{{ post.image }}" alt="" class="img-responsive">
 	              {% else %}
 	              <h3>No featured image here!</h3>
 	              {% endif %}
