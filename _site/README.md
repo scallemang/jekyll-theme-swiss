@@ -1,12 +1,12 @@
 # Swiss Theme for Jekyll, by SC Allemang (rhineland.co)
 
-Swiss Design-inspired theme for Jekyll by Samuel Allemang. Built on Bootstrap, with colours inspired by Material Design.
+Swiss Design-inspired theme for Jekyll by Samuel Allemang. Built on [Bootstrap](http://getbootstrap.com), with colours inspired by [Material Design](http://material.io).
 
 ## Features/Guide
 
 ### _config.yml
 
-Set the following in _config.yml:
+Set the following in `_config.yml`:
 
 + Site title
 + Contact email
@@ -17,7 +17,7 @@ Set the following in _config.yml:
 
 ### Header nav
 
-+ The header nav is automatically generated from your non-root, non-category, non-tag pages. It can be modified in '_inlcudes/header.html'
++ The header nav is automatically generated from your non-root, non-category, non-tag pages. It can be modified in `_inlcudes/header.html`
 
 ### Portfolio page
 
