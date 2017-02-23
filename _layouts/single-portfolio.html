@@ -8,7 +8,7 @@ layout: default
     <h3>Categories</h3>
     <ul class="list-inline">
       {% for category in page.categories %}
-        <li><a href="/blog/categories/{{category}}/"><small>{{ category }}</small></a></li>
+        <li><a href="{{site.baseurl}}/blog/categories/{{category}}/"><small>{{ category }}</small></a></li>
       {% endfor %}
     </ul>
     <h3>Tags</h3>
@@ -21,7 +21,7 @@ layout: default
   </div>
   <div class="col-md-8">
     {% if page.image %}
-    <img src="/img/{{ page.image }}" alt="" class="img-responsive">
+    <img src="{{site.baseurl}}/img/{{ page.image }}" alt="" class="img-responsive">
     {% else %}
     <h2>THIS POST DOES NOT HAVE A FEATURED IMAGE!!</h2>
     {% endif %}

@@ -14,7 +14,7 @@ layout: default
           {% assign loopindex = forloop.index | modulo: 3 %}
           <div class="col-sm-4">
               {% if post.image %}
-              <img src="/img/{{ post.image }}" alt="" class="img-responsive">
+              <img src="{{site.baseurl}}/img/{{ post.image }}" alt="" class="img-responsive">
               {% else %}
               <h3>No featured image here!</h3>
               {% endif %}
