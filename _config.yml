@@ -4,7 +4,7 @@ email: user@example.com
 description: > # this means to ignore newlines until "baseurl:"
   I am the meta description. Edit me for Googley goodness.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "https://scallemang.github.io/jekyll-theme-swiss" # the base hostname & protocol for your site
 twitter_username: therhineland
 github_username:  rhineland
 
