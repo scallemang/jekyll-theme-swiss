@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<div class="row row-buffer post-title">
+  <div class="col-md-4 post-title">
+    <h2>{{ page.title }}</h2>
+    <h3>Categories</h3>
+    <ul class="list-inline">
+      {% for category in page.categories %}
+        <li><a href="/blog/categories/{{category}}/"><small>{{ category }}</small></a></li>
+      {% endfor %}
+    </ul>
+    <h3>Tags</h3>
+    <ul class="list-inline">
+      {% for tag in page.tags %}
+        <li><a href="/blog/tags/{{tag}}/"><small>{{ tag }}</small></a></li>
+      {% endfor %}
+    </ul>
+    <p id="post-meta">{{ tags_content }}</p>
+  </div>
+  <div class="col-md-8">
+    {% if page.image %}
+    <img src="/img/{{ page.image }}" alt="" class="img-responsive">
+    {% else %}
+    <h2>THIS POST DOES NOT HAVE A FEATURED IMAGE!!</h2>
+    {% endif %}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 post-title">
+    <!-- <h2>{{ page.title }}</h2>
+    <h3>Categories</h3>
+    <ul class="list-inline">
+      {% for category in page.categories %}
+        <li><a href="/blog/categories/{{category}}/"><small>{{ category }}</small></a></li>
+      {% endfor %}
+    </ul>
+    <h3>Tags</h3>
+    <ul class="list-inline">
+      {% for tag in page.tags %}
+        <li><a href="/blog/tags/{{tag}}/"><small>{{ tag }}</small></a></li>
+      {% endfor %}
+    </ul>
+    <p id="post-meta">{{ tags_content }}</p> -->
+  </div>
+  <div class="col-md-8 main-content">
+    <div class="row">
+      <div class="col-md-12">
+        {% if page.columns %}
+        <div class="columns">
+        {% endif %}
+      	<article>
+      			{{ content }}
+      	</article>
+        {% if page.columns %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

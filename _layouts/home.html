@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+    <div class="jumbotron">
+      <div class="container">
+        	{{ content }}
+        <p><a class="btn btn-primary btn-lg" href="{{ page.button_link }}" role="button">{{ page.button_text }} &raquo;</a></p>
+      </div>
+    </div>
+    <div class="container">
+      {% include home-widgets.html %}
+      {% include footer.html %}

@@ -1,0 +1,199 @@
+/* Overwriting Bootstrap CSS until I can recompile, minify, consolidate... */
+.portfolio .img-responsive {
+	box-shadow: 2px 2px 9px #CCC;
+	-webkit-transition: all 0.25s; /* Safari */
+    transition: all 0.5s;
+}
+
+.portfolio .img-responsive:hover {
+	box-shadow: 2px 2px 9px #333;
+}
+
+.navbar-default {
+	background-color: #fff;
+	border-color: #f5f5f5;
+	box-shadow: none;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #f5f5f5;
+}
+
+.navbar-default .navbar-brand {
+	color: #f00000;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #D32F2F;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #212121;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a {
+	background-image: none;
+	background-color: #2196F3;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	background-color: #1976D2;
+	color: #fff;
+}
+
+.btn-primary {
+	background-image: none;
+	background-color: #ef5e50;
+	color: #fff;
+	border-color: #f00000;
+}
+
+a:visited.btn-primary {
+	color: #fff;
+}
+
+a:hover.btn-primary {
+	color: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+.btn-primary, .btn-default, .navbar-nav li a, a {
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	background-color: #E53935;
+	border-color: #f00000;
+}
+
+.jumbotron {
+	background: #f5f5f5;
+}
+
+a {
+	color: #2196F3;
+}
+
+a:hover, a:focus, a:visited {
+	color: #1976D2;
+}
+
+.btn-default {
+	background-image: none;
+	background-color: transparent;
+	border-color: #f00000;
+	color: #f00000;
+}
+
+.btn-default:hover, .btn-default:focus {
+	border-color: #f00000;
+	background-color: #E53935;
+	color: #fff;
+	text-shadow: 0 1px 0 #f00000;
+}
+
+a:visited.btn-default {
+	color: #f00000;
+}
+
+a:hover.btn-default {
+	color: white;
+}
+
+.row-buffer { 
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+
+.breadcrumb {
+	background-color: inherit;
+	background-color: transparent;
+	padding: 0;
+}
+
+.glyphicon {
+	margin-right: 7px;
+}
+
+.main-content p,
+.main-content ul,
+.main-content ol,
+.main-content dl {
+	text-align: justify;
+	font-family: Georgia, serif;
+}
+
+.main-content blockquote p {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 300;
+	/* letter-spacing: 0.5px; */
+}
+
+.post-title>h2, .blog-feed h3 {
+	font-size: 15px;
+}
+
+.post-title>h2, .blog-feed h3 a {
+	color: #f00000;
+}
+
+.post-title h3 {
+	font-size: 13px;
+	color: #212121;
+}
+
+.blog-feed small {
+	font-size: 95%;
+}
+
+.small-title {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.gradient-bg {
+	/*background: linear-gradient(219deg, #b71c1c, #880e4f, #1a237e, #004d40, #1b5e20, #f57f17);
+	background-size: 1200% 1200%;
+	-webkit-animation: JumbotronGradient 30s ease infinite;
+	-moz-animation: JumbotronGradient 30s ease infinite;
+	animation: JumbotronGradient 30s ease infinite;*/
+	color: #f5f5f5;
+}
+
+@-webkit-keyframes JumbotronGradient {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@-moz-keyframes JumbotronGradient {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+@keyframes JumbotronGradient { 
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
+}
+
+@media (min-width: 992px) {
+	.columns {
+		-webkit-columns: 2 150px;
+	  -moz-columns: 2 150px;
+	  columns: 2 150px;
+	  -webkit-column-gap: 1em;
+	  -moz-column-gap: 1em;
+	  column-gap: 1em;
+	}
+}

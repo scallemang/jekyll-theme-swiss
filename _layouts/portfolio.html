@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+  <h1 class="page-heading">{{ page.title }} <small>{{ page.subtitle }}</small></h1>
+  {{ content }}
+
+  <div class="row">
+    <div class="col-md-12 post-title">
+      <!-- {% include widget-categories-tags.html %} -->
+      <div class="row masonry-container">
+        {% for image in page.images %}
+          <div class="col-sm-6 col-md-4 col-lg-4 item">
+            <div class="thumbnail">
+              <!-- <a href="{{ post.url | prepend: site.baseurl }}"> --><a href="{{ image | last }}" target="_blank"><img src="/img/portfolio/{{ image | first }}" alt="" class="img-responsive"></a>
+            </div>
+          </div>{% endfor %}
+      </div>
+    </div>
+  </div>

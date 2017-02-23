@@ -1,0 +1,31 @@
+---
+layout: default
+---
+ <h1 class="page-heading">Tag: {{ page.tag | capitalize }}</h1>
+  <div class="row">
+    <div class="col-md-4 post-title">
+      {% include widget-categories-tags.html %}
+    </div>
+    <div class="col-md-8 main-content blog-feed">
+    {% if site.tags[page.tag] %}
+      <div class="row">
+        {% for post in site.tags[page.tag] %}
+          <div class="col-sm-4">
+              {% if post.image %}
+              <img src="/img/{{ post.image }}" alt="" class="img-responsive">
+              {% else %}
+              <h3>No featured image here!</h3>
+              {% endif %}
+              <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+              <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales hendrerit erat, ac aliquet lacus viverra imperdiet.</small></p>
+              <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+          </div>
+        {% endfor %}
+        {% else %}
+        	<p>There are no posts for this tag.</p>
+    	{% endif %}
+      </div>
+      <hr>
+      <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+  </div>

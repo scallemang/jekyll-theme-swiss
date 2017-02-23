@@ -1,0 +1,17 @@
+<hr>
+			<footer>
+				<p>&copy; <a href="http://rhineland.co">Rhineland Co.</a> {{ site.time | date: '%Y' }}.<br>Edit me at <code class="highlighter-rouge">_includes/footer.html</code></p>
+			</footer>
+		</div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- <script src="/js/lazyLoad.min.js"></script> -->
+    <script src="/js/imagesLoaded.min.js"></script>
+    <script src="/js/masonry.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/site.js"></script>
+    {% if page.script %}<script src="/js/{{ page.script }}"></script>{% endif %}
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  {% include head.html %}
+  <body{% if page.class %} class="{{ page.class }}"{% endif %}>
+    {% include header.html %}
+    {% if page.class != "home" %}<div class="container">{% endif %}
+      {{ content }}
+      {% if page.class != "home" %}{% include footer.html %}{% endif %}
+    

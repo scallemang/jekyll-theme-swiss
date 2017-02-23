@@ -1,0 +1,12 @@
+<h2>Categories</h2>
+      <ul class="list-inline">
+        {% for category in site.categories %}
+          <li><a href="/blog/categories/{{category | first | slugify}}/"><small>{{ category | first }}</small></a></li>
+        {% endfor %}
+      </ul>
+      <h2>Tags</h2>
+      <ul class="list-inline">
+        {% for tag in site.tags %}
+          <li><a href="/blog/tags/{{tag | first | slugify}}/"><small>{{ tag | first }}</small></a></li>
+        {% endfor %}
+      </ul>
