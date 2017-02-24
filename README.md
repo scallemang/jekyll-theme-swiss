@@ -22,3 +22,7 @@ Set the following in `_config.yml`:
 ### Portfolio page
 
 + Add an image to the `img` directory; add it as a new array to `portfolio.md`, with the filename and a relevant URL.
+
+### Page-specific scripts
+
+To include a script on one page, add it to the `/js` folder and include `script: yourScriptNameHere.js` in your page’s frontmatter.

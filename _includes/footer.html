@@ -12,6 +12,6 @@
     <script src="{{ "/js/masonry.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/js/site.js" | prepend: site.baseurl }}"></script>
-    {% if page.script %}<script src="{{ "/js/{{ page.script }}" | prepend: site.baseurl }}"></script>{% endif %}
+    {% if page.script %}<script src="{{site.baseurl }}/js/{{page.script}}"></script>{% endif %}
   </body>
 </html>

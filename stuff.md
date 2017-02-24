@@ -4,4 +4,4 @@ title: Stuff
 permalink: /stuff/
 ---
 
-## [Waves of Type](/waves-of-type/)
+## [Waves of Type]({{site.baseurl}}/waves-of-type/)
