@@ -26,3 +26,5 @@ Set the following in `_config.yml`:
 ### Page-specific scripts
 
 To include a script on one page, add it to the `/js` folder and include `script: yourScriptNameHere.js` in your page’s frontmatter.
+
+![Swiss Jekyll Theme Screenshot](img/jekyll-theme-swiss-screenshot.png "Swiss Jekyll Theme Screenshot")
