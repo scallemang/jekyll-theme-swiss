@@ -8,10 +8,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- <script src="/js/lazyLoad.min.js"></script> -->
-    <script src="/js/imagesLoaded.min.js"></script>
-    <script src="/js/masonry.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/site.js"></script>
-    {% if page.script %}<script src="/js/{{ page.script }}"></script>{% endif %}
+    <script src="{{ "/js/imagesLoaded.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/masonry.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/site.js" | prepend: site.baseurl }}"></script>
+    {% if page.script %}<script src="{{ "/js/{{ page.script }}" | prepend: site.baseurl }}"></script>{% endif %}
   </body>
 </html>
