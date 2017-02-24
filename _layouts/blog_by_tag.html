@@ -10,6 +10,7 @@ layout: default
     {% if site.tags[page.tag] %}
       <div class="row">
         {% for post in site.tags[page.tag] %}
+          {% assign loopindex = forloop.index | modulo: 3 %}
           <div class="col-sm-4">
               {% if post.image %}
               <img src="{{site.baseurl}}/img/{{ post.image }}" alt="" class="img-responsive">
@@ -20,6 +21,10 @@ layout: default
               <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales hendrerit erat, ac aliquet lacus viverra imperdiet.</small></p>
               <p>{{ post.date | date: "%b %-d, %Y" }}</p>
           </div>
+          {% if loopindex == 0 %}
+            </div>
+            <div class="row">
+          {% endif %}
         {% endfor %}
         {% else %}
         	<p>There are no posts for this tag.</p>
