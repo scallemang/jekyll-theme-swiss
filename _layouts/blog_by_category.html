@@ -11,6 +11,7 @@ layout: default
     	{% if site.categories[page.category] %}
 
 	        {% for post in site.categories[page.category] %}
+	        	{% assign loopindex = forloop.index | modulo: 3 %}
 	          <div class="col-sm-4">
 	              {% if post.image %}
 	              <img src="{{site.baseurl}}/img/{{ post.image }}" alt="" class="img-responsive">
@@ -21,6 +22,10 @@ layout: default
 	              <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales hendrerit erat, ac aliquet lacus viverra imperdiet.</small></p>
 	              <p>{{ post.date | date: "%b %-d, %Y" }}</p>
 	          </div>
+	          {% if loopindex == 0 %}
+	            </div>
+	            <div class="row">
+	          {% endif %}
 	        {% endfor %}
 	        {% else %}
 	        <div class="col-sm-12">
